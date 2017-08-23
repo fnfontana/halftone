@@ -23,3 +23,15 @@ pack:
   artifacts:
     paths:
     - ./*.tgz
+
+image: alpine:latest
+
+pages:
+  stage: deploy
+  script:
+  - echo 'Nothing to do...'
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
